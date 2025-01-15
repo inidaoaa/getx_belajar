@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:myapp/app/modules/dashboard/views/dashboard_view.dart';
 import 'package:myapp/app/utils/api.dart';
 
 class LoginController extends GetxController {
@@ -18,6 +19,7 @@ class LoginController extends GetxController {
 
     if(response.statusCode == 200) {
       authToken.write('token', response.body['token']);
+      Get.offAll(() => const DashboardView());
     }else{
       Get.snackbar(
         'Error',
@@ -31,7 +33,7 @@ class LoginController extends GetxController {
           left: 5,
           right: 5,
         ),
-      ),
+      );
     }
   }
   

@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/counter/bindings/counter_binding.dart';
 import '../modules/counter/views/counter_view.dart';
+import '../modules/dashboard/bindings/dashboard_binding.dart';
+import '../modules/dashboard/views/dashboard_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.REGISTER,
       page: () => const RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.DASHBOARD,
+      page: () => const DashboardView(),
+      binding: DashboardBinding(),
     ),
   ];
 }

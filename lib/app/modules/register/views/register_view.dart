@@ -49,7 +49,7 @@ class RegisterView extends GetView<RegisterController> {
               padding: const EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
                 controller: controller.passwordController,
-                obsecureText: true,
+                obscureText: true,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Password',
@@ -58,9 +58,10 @@ class RegisterView extends GetView<RegisterController> {
               ),
             ),
             Padding(
-              padding : const EdgeInsets.symmetric(horizontal: 15,vertical: 15)
+              padding : const EdgeInsets.symmetric(horizontal: 15,vertical: 15),
               child: TextField(
                 controller: controller.passwordConfirmationController,
+                obscureText: true,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Password Confirmation',

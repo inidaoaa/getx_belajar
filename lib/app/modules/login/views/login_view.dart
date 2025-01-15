@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:lottie/lottie.dart';
+import 'package:myapp/app/modules/register/views/register_view.dart';
 
 import '../controllers/login_controller.dart';
 
