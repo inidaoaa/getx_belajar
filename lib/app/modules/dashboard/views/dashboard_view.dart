@@ -22,7 +22,7 @@ class DashboardView extends GetView<DashboardController> {
          bottomNavigationBar: BottomNavigationBar(
           currentIndex: controller.selectedIndex.value,
           onTap: (index) {
-            controller.ChangeIndex(index);
+            controller.changeIndex(index);
             Get.nestedKey(1)!.currentState!.pushReplacement(
                   MaterialPageRoute(
                     builder: (_) => controller.pages[index],
